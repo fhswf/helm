@@ -227,7 +227,7 @@ async function deploy(helm) {
     release,
     chart,
     "--install",
-    "--wait",
+    "--cleanup-on-fail",
     `--namespace=${namespace}`,
   ];
 
